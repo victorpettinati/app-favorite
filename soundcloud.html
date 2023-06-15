@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundCloud</title>
+    <link rel="stylesheet" href="style-soundcloud.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<header>
+    <img class="logo" src="image/logo-sc-orange.png" alt="unable to load">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index-vp.html">Qobuz</a>
+        <a href="soundcloud.html">SoundCloud</a>
+        <a href="apple-music-in.html">AppelMusic</a>
+        <a href="">Tidal</a>
+        <a href="deezer.html">Deezer</a>
+    </nav>
+</header>
+<body>
+    <section class="body-part1">
+        <article class="art-1-1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YSl8spHnzX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </article>
+        <article class="art-1-2">
+            <h1>Start your music career.</h1>
+            <p>Upload your first track and embark on your journey in the music industry.<br>
+                SoundCloud gives you a platform to create, find your fans, and connect with other artists.<br>
+                Listen to over 320 million tracks offline and ad-free.</p>
+        </article>
+
+    </section>
+    <section class="body-part2">
+        <article>
+            <h1>Creator</h1>
+            <p>Get on SoundCloud to connect with fans, share your sounds, and grow your audience. What are you waiting for?</p>
+            <a href="">Start now</a>
+        </article>
+        <article>
+            <img class="chant" src="image/chanteur.jpeg" alt="unable to load">
+        </article>
+
+    </section>
+    <section class="body-part3">
+        <article class="reader">
+            <iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/users/1539950/favorites" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
+            <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+            <script type="text/javascript">
+              (function(){
+                var widgetIframe = document.getElementById('sc-widget'),
+                    widget       = SC.Widget(widgetIframe);
+            
+                widget.bind(SC.Widget.Events.READY, function() {
+                  widget.bind(SC.Widget.Events.PLAY, function() {
+                    // get information about currently playing sound
+                    widget.getCurrentSound(function(currentSound) {
+                      console.log('sound ' + currentSound.get('') + 'began to play');
+                    });
+                  });
+                  // get current level of volume
+                  widget.getVolume(function(volume) {
+                    console.log('current volume value is ' + volume);
+                  });
+                  // set new volume level
+                  widget.setVolume(50);
+                  // get the value of the current position
+                });
+            
+              }());
+            </script>
+
+        </article>
+        <article class="reader2">
+            <h1>Music lover</h1>
+            <p>Hear what's trending for free in the SoundCloud community</p>
+        </article>
+
+    </section>
+    <section class="body-part4">
+        <article class="art-left">
+            <h1>Never stop listening</h1>
+            <p>SoundCloud is nom available on Web, iOS, Android, Sonos, Chromecast, and Xbox One.</p>
+            <img class="appel-andro" src="image/appel-android.png" alt="unable to load">
+        </article>
+        <article class="art-right">
+            <img class="sc-phone" src="image/sc-phone.webp" alt="unable to load">
+        </article>
+
+    </section>
+    
+</body>
+<footer>
+    <img class="logo" src="image/logo-sc-orange.png" alt="unable to load">
+    <p>&copy;Desing by Clément Machtelinckx</p>
+    <nav>
+        <a href="appli_music.html">Home</a>
+        <a href="">Qobuz</a>
+        <a href="soundcloud.html">SoundCloud</a>
+        <a href="">AppelMusic</a>
+        <a href="">Tidal</a>
+        <a href="deezer.html">Deezer</a>
+        
+    </nav>
+</footer>
+</html>

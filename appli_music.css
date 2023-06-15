@@ -1,0 +1,73 @@
+@keyframes slideIn {                                /* Creation d'une animation en mode glissement de la gauche vers la droite */
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+body{
+    /*background-color: black;*/
+    font-family: arial;
+    font-weight: bold;                             
+
+    /*padding-top: 50px;*/   
+    margin: 0;
+}
+.contenaire {
+    width: 100%;
+    overflow: hidden;
+}
+.icone-groupe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.video-arriere-plan {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;            
+    object-fit: cover;
+}
+
+.icone-box {
+    animation: slideIn 5s ease-in-out forwards;  
+    width: 15%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.icone-groupe img:hover {
+    scale: 1.4;
+    /*transition: transform 0.3s ease;*/
+    /*transition-delay: 0.2s;*/
+    /*transform: translateX(100px);*/
+}
+.icone-groupe img {
+    width: 50%;
+    height: 50%;
+}
+
+.text-hover {
+    color: white;
+    background-color: black;
+    border-radius: 25%;
+    padding: 5px 10px;
+    position: absolute;
+    font-size: 1.3em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .icone-box:hover .text-hover {
+    opacity: 1;
+    transition: transform 0.3s ease;
+    transition-delay: 0.2s;
+    transform: translateX(100px)
+  }

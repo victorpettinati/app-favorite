@@ -1,0 +1,179 @@
+body {
+  margin: 0%;
+  background-color: #e8e4ddde;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    padding: 0%;
+}
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    left: 10%;
+}
+  
+  .nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.butt {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#000000;
+  border: none;
+  color:#efede8de;
+  padding: 15px;
+  text-align: center;
+  text-decoration:none ;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 0.3rem;
+ }
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: #efede8de; /* Couleur pour les liens déjà visités */
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+.title1 h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 300% ;
+  justify-content: space-around;
+  color: #373735de;
+}
+
+.title1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 120%;
+  justify-content: flex-end;
+  color: #373735de;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title2 h2 {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #efede8de;
+  margin-top: 40%;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.slider {
+  width: 300px;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin: 10px;
+  margin-left: 22%;
+}
+
+.slides {
+  width: calc(300px*6);
+  animation: glisse 10s infinite ;
+}
+
+.slide {
+  float: left;
+}
+
+
+@keyframes glisse {
+  0% {
+    transform: translateX(0px);
+  }
+  16.5% {
+    transform: translateX(-300px);
+  }
+  33% {
+    transform: translateX(-600px);
+  }
+  49.5% {
+    transform: translateX(-900px);
+  }
+  66% {
+    transform: translateX(-1200px);
+  }
+  82.5% {
+    transform: translateX(-1500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.parallax {
+  /* La hauteur du parallaxe */
+  height: 400px; 
+
+  /* Utilisation de l'image de fond */
+  background-image: url('image\\pexels-pixabay-210922.jpg');
+
+  /* Création de l'effet de parallaxe */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+.video-arriere-plan {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.text-frame {
+  background-color: #dcd8d0de;
+  border: none; /* Couleur et épaisseur de la bordure du cadre */
+  border-style: none;
+  border-radius: 3rem;
+  padding: 10px; /* Espace entre la bordure et le texte */
+  margin: 10px; /* Espace autour du cadre */
+  width: 550px; /* Largeur du cadre */
+  height: auto; /* Hauteur du cadre, ajustée automatiquement en fonction du contenu */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* X-offset, Y-offset, blur, couleur */
+  background-image: linear-gradient( #d5d3cdde, rgba(108, 102, 102, 0.582));
+  text-align: center;
+
+
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+footer {
+    background-color: #000000;
+    color: #efede8de;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0.1%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

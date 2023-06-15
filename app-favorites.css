@@ -1,0 +1,262 @@
+/* Code CSS de ET */
+
+body {
+    font-family: 'Futura', sans-serif;
+    background-color: black;
+}
+
+.navbar {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+}
+
+.navbar-logo {
+    width: 100px;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.navbar-brand {
+    color: #EDEDED;
+    margin-right: auto;
+    padding-left: 50px;
+    font-size: 50px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-link {
+    color: #EDEDED;
+    text-decoration: none;
+    margin-right: 15px;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    background-color: black;
+
+}
+
+.navbar-link:hover {
+    background-color: #EDEDED;
+    color: black;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #EDEDED;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+h1, h2 {
+    color: #EDEDED;
+    animation: slideIn 5s ease;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+@keyframes change {
+    0% { opacity: 0; z-index: 2; }
+    4% { opacity: 1; }
+    20%, 100% { opacity: 0; z-index: 1; }
+}
+
+#about {
+    position: relative;
+    min-height: 100vh; 
+    background-image: url("image/sunrise.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.text-container {
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    z-index: 0;
+    animation: change 40s linear infinite;
+}
+
+.text-inner {
+    color: #EDEDED;
+    font-size: 50px;
+    text-align: center;
+    max-width: 60%; 
+}
+
+#about .text-container:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#about .text-container:nth-child(2) {
+    animation-delay: 8s;
+}
+
+#about .text-container:nth-child(3) {
+    animation-delay: 16s;
+}
+
+#about .text-container:nth-child(4) {
+    animation-delay: 24s;
+}
+
+#about .text-container:nth-child(5) {
+    animation-delay: 32s;
+}
+
+section {
+    margin: 50px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.box {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.box:hover {
+    opacity: 0.5;
+}
+
+.live {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.son {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+}
+
+.abo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+}
+
+#download {
+    position: relative;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    height: 500px; /* Ajout de la hauteur pour correspondre à .image-container */
+    overflow: hidden;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-image: url('image/micro.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+#download a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #EDEDED;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+#download h2 {
+    margin-bottom: 300px;
+}
+
+footer {
+    color: #EDEDED;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.background-image {
+    background-image: url("image/followme.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 10px 0;
+}
+
+footer a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #EDEDED;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}

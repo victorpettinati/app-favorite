@@ -1,0 +1,264 @@
+/* background du body */
+body{
+    background-color: #0b0b0b;
+    margin: 0;
+}
+/* style du header */
+header{
+    background-image: url(image/concert2.png);
+    background-size: cover;
+    height: 300px;
+}
+/* style du logo */
+header img{
+    padding: 15px;
+    width: 250px;
+}
+/* centrage des boutons */
+header nav.button_list{
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: self-end;
+}
+/* style des boutons */
+header nav.button_list div a{
+    color: white;
+    font-family: Segoe UI Semibold;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* effet sur les bouttons au passage de la souris */
+header nav.button_list div:hover a{
+    /* color: #fff; */
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #00000077;
+    /* background-color: #dc4a115f; */
+}
+/* style du footer */
+footer p{
+    font-family: Segoe UI Semibold;
+    color: white;
+    font-size: 15px;
+}
+/* mise en forme du titre des offres */
+main section.offres h1{
+    color: white;
+    text-align: center;
+    font-family: Segoe UI Semibold;
+    font-size: 35px;
+    padding: 20px;
+}
+/* mise en forme du texte des offres */
+main section.offres div div{
+    color: white;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: yellow; */
+    text-align: center;
+    border-radius: 2rem;
+    padding: 15px;
+    font-size: 20px;
+    font-family: Segoe UI Semibold;
+}
+main section.offres div div a.learn{
+    color: #fff;
+    font-size: 15px;
+}
+/* centrage des blocs de texte */
+main section.offres div{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* dégradé de couleur 1 */
+div.free{
+    background: linear-gradient(57.8deg,#6b42b4 9.75%,#943aab 95.44%);
+}
+/* dégradé de couleur 2 */
+div.premium{
+    background: linear-gradient(69.06deg,#b84fdd -26.76%,#4965f4 44.6%,#2efb74 132.54%);
+}
+/* dégradé de couleur 3 */
+div.family{
+    background: linear-gradient(53.13deg,#dc4c11 10.71%,#feab2e);
+}
+/* style des boutons des offres */
+a.button{
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+}
+/* titre flow */
+div.text_flow h1{
+    font-size: 35px;
+}
+/* centrage des éléments de flow */
+main section.flow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* style image flow */
+main section.flow div.img_flow img.flow{
+    padding-bottom: 20px;
+}
+/* style bouton flow */
+main section.flow div.button_flow a{
+    text-decoration: none;
+    color: #000;
+}
+/* style texte flow */
+main section.flow div.text_flow{
+    width: 600px;
+    color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Segoe UI Semibold;
+    font-size: 20px;
+}
+
+div.text_songcatcher h1{
+    font-size: 35px;
+}
+/* centrage des éléments de songcatcher */
+main section.songcatcher{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* style texte songcatcher */
+main section.songcatcher div.text_songcatcher{
+    width: 600px;
+    color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Segoe UI Semibold;
+    font-size: 20px;
+}
+/* style image songcatcher */
+main section.songcatcher div.img_songcatcher img.songcatcher{
+    padding-bottom: 20px;
+    width: 600px;
+}
+/* mise en forme du slider */
+section.slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Segoe UI Semibold;
+    font-size: 20px;
+    color: #fff;
+}
+/* style du titre slider */
+section.slider h1{
+    width: 600px;
+    font-size: 35px;
+}
+/* style du texte slider */
+section.slider p{
+    width: 600px;
+    padding-bottom: 20px;
+}
+/* mise en forme du container_slider */
+section.slider div.container_slider{
+    width: 250px;
+    overflow: hidden;
+}
+/* style de l'animation */
+section.slider div.container_slider div.image{
+    display: flex;
+    animation-duration: 10s;
+    animation-name: mySliders;
+    animation-iteration-count: infinite;
+    padding-bottom: 20px;
+}
+/* animation du slider */
+@keyframes mySliders{
+    0%,
+    20%{
+        transform: translateX(0);
+    }
+    25%,
+    45%{
+        transform: translateX(-250px);
+    }
+    50%,
+    70%{
+        transform: translateX(-500px);
+    }
+    75%,
+    95%{
+        transform: translateX(-750px);
+    }
+    100%{
+        transform: translateX(-1000px);
+    }
+}
+/* mettre en pause l'animation au passage de la souris */
+section.slider div.container_slider:hover div.image{
+    animation-play-state: paused;
+}
+
+/* <<<<<<<<<mise en place du responsive>>>>>>>>> */
+@media screen and (max-width:1300px){
+    main section.offres div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9em;
+}
+    main section.offres{
+        height: 100%;
+    }
+    main section.offres div div{
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width:700px) {
+    header img{
+        width: 200px;
+        margin: 0 auto;
+    }
+    header nav.button_list{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    section.slider h1{
+        width: 350px;
+}
+    section.slider p{
+        width: 350px;
+        font-size: 0.9em;
+}
+    section.offres div div{
+        padding: 10px;
+        height: 100%;
+        font-size: 0.9em;
+}
+    main section.flow div.text_flow{
+    width: 350px;
+    /* font-size: 0.9em; */
+}
+    main section.flow div.img_flow img{
+    width: 350px;
+}
+    main section.songcatcher div.text_songcatcher{
+    width: 350px;
+}
+    main section.songcatcher div.img_songcatcher img.songcatcher{
+    width: 350px;
+}
+}

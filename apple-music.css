@@ -1,0 +1,245 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: 50px; /* ajoute une marge en bas du contenu principal */
+}
+
+.portait {
+    width: 70px;
+    height: auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Ajoute un peu d'espace sur les côtés */
+}
+
+.header-title {
+    flex-grow: 1; /* Permet au titre de prendre tout l'espace restant */
+    text-align: center; /* Centre le titre */
+    margin-left: 130px; /* Enlève la marge par défaut du titre h1 */
+    font-size: 2em; /* Change la taille du texte */
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Aligne le menu à la fin du conteneur */
+}
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+/* Reste du code CSS ici */
+
+
+video {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+#bannerVideo {
+    /* position: absolute;
+    min-width: 100%;*/
+    min-height: 55vh; 
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-container {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+#texte-apres-video {
+    text-align: center; /* Centrer le texte */
+    padding: 20px; /* Ajouter un peu d'espace autour du texte */
+    font-size: 3em; /* Change la taille du texte */
+}
+
+.rounded-button {
+    background-color: red; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border: none; /* Supprime la bordure par défaut du bouton */
+    border-radius: 30px; /* Arrondit les coins du bouton */
+    font-size: 1.5em; /* Taille du texte du bouton */
+    cursor: pointer; /* Change le curseur en main lorsqu'il survole le bouton */
+    text-decoration: none; /* Supprime la soulignement par défaut du texte */
+    display: block; /* Fait en sorte que le bouton prenne toute la largeur disponible */
+    margin: 0 auto; /* Centrer le bouton */
+}
+
+
+#hero {
+    background-image: url('');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h1 {
+    font-size: 2em;
+    color: white;
+}
+
+#hero p {
+    font-size: 1.2em;
+    color: white;
+}
+
+button {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.container {
+    position: relative;
+    height: 500px; 
+    overflow: hidden;
+}
+
+.image1, .image2, .image3, .image4, .image5 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    animation: slide 10s linear infinite;
+}
+
+.image2 {
+    animation-delay: 2s; /* Pour commencer la deuxième image à mi-chemin de la première */
+}
+
+.image3 {
+    animation-delay: 4s; /* Pour commencer la deuxième image à mi-chemin de la première */
+}
+
+.image4 {
+    animation-delay: 6s; /* Pour commencer la deuxième image à mi-chemin de la première */
+}
+
+.image5 {
+    animation-delay: 8s; /* Pour commencer la deuxième image à mi-chemin de la première */
+}
+
+
+
+
+@keyframes slide {
+    0% { left: -200px; }
+    100% { left: 100%; }
+}
+
+.center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center img {
+    position: relative;
+    z-index: 1;
+    width: 70%;  /* ajustez cette valeur pour changer la taille de l'image */
+    border-radius: 10%; /* ajustez cette valeur pour changer l'arrondi des bords */
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* ajustez cette valeur pour changer la taille de l'image */
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container {
+    position: relative;
+    width: 70%; /* ajustez la taille de l'image ici */
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10%; /* ajustez l'arrondi des bords ici */
+    z-index: 1;
+}
+
+.text-on-image {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    right: 10px; /* aligne le texte à droite */
+    top: 50%; /* aligne le texte verticalement au centre */
+    transform: translateY(-50%); /* ajuste la position verticale du texte pour le centrer parfaitement */
+    padding: 20px; /* ajoute un peu d'espace autour du texte à l'intérieur de l'image */
+    text-align: right; /* aligne le texte à droite dans son conteneur */
+    font-size: 1.5em; /* modifie la taille du texte */
+}
+
+.image-container1 {
+    width: 1450px; /* ou toute autre valeur que vous voulez */
+    overflow: hidden; /* cache tout ce qui dépasse de cette div */
+  }
+  
+  .my-image {
+    width: 100%;
+    height: auto;
+  }
+
+
+footer {
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    width: 100%;
+    max-width: 2200px; /* adjust as needed */
+    padding: 0 20px; /* adjust as needed */
+}
+
+.footer-logo {
+    height: 50px; /* adjust as needed */
+    width: auto; /* adjust as needed */
+}
+
+.footer-text {
+    text-align: center;
+    flex-grow: 1;
+}
